@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}   
+
+
+.cidDetalhes{
+    text-align: center;
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    background-color:rgb(8, 8, 86);
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 7px;
+}
+.cabecalho h1 {
+    font-size: 3rem;
+    color: white;
+}
+#pginicial {
+    position: absolute;
+    left: 20px;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.carousel {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+img{
+    
+    max-height: 500px;      
+    border-radius: 8px;
+}
+
+
+.pdescricao{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    
+}
+p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 0 2rem;
+    margin: auto;
+    
+}
+
+footer {
+    background-color: rgb(8, 8, 86);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+@media ( max-width: 1500px) {
+    .cabecalho{
+        flex-direction: column;
+    }
+    .cabecalho h1{
+        font-size: 500%;
+        
+    }
+    .carousel {
+        width: 100%; 
+    }
+    .pdescricao{
+        text-align: center;
+        font-size: 200%;
+        
+    }
+    #pginicial{
+        font-size: 300%;
+        position: static;
+    }
+    p{
+        font-size: 270%;
+    }
+    footer{
+        font-size: 270%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho{
+        flex-direction: column  ;
+    }
+    .cabecalho h1{
+        font-size: 350%;
+    }
+    #pginicial{
+        font-size: 175%;
+        position: static;
+    }
+    .carousel {
+        width: 100%; 
+    }
+
+    .pdescricao{
+        font-size: 145%;
+    }
+    p{
+        font-size: 180%;
+    }
+    footer{
+        font-size: 180%;
+    }
+}
+@media (max-width: 480px) {
+    .cabecalho{
+        flex-direction: column  ;
+    }
+    .cabecalho h1{   
+        font-size: 270%;
+        text-align: center;
+        
+    }
+    #pginicial{
+        font-size: 150%;  
+        margin-bottom: 0.5rem; 
+        text-align: center; 
+        position: static;
+    }
+    .carousel {
+        width: 100%; 
+    }
+    .pdescricao{
+        font-size: 130%;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 140%;
+    }
+    footer{
+        font-size: 130%;
+    }
+}
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
+    .cabecalho  h1{
+        font-size: 2.5rem;
+    }
+    #pginicial{
+        font-size: 1.5rem;
+    }
+    .carousel {
+        width: 70%; 
+    }
+    .pdescricao{
+        font-size: 130%;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 130%;
+    }
+    footer{
+        font-size: 130%;
+    }
+}

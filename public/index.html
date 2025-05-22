@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Lugares Turísticos</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="header">
+            <h1>TurisTop</h1>
+            <nav class="pesquisa">
+                <input type="text" class="caixapesquisa" placeholder="Pesquisar...">
+                <button class="botao">Ok</button>
+                <button id="btncadastro" onclick="window.location.href='cadastro.html'">Inserir cidade</button>
+            </nav>
+    </header>
+
+    <section class="grid1">
+
+        <main>
+            <div>
+                <img class="imgprincipal" src="img/imagemprinc.png" alt="Imagem da Cidade de Veneza, Itália">
+                <p>Este site tem como objetivo recomendar os melhores lugares turísticos do planeta. É a página perfeita
+                    para aqueles que gostariam de viajar pelo mundo, mas não têm nenhuma ideia de onde ir.</p>
+            </div>
+        </main>
+    </section>
+
+    <section>
+        <div id="cidades" class="grid2"></div>
+        <!--<div class="card">
+            
+                <img src="singapura.jpg" alt="Vista aérea de Singapura">
+                <h3>Singapura</h3>
+            
+            <p>Ilha tropical no sudeste da Ásia, conhecida pela sustentabilidade e pela presença de áreas verdes.</p>
+        </div>
+
+        <div class="card">
+            
+                <img src="paris.jpg" alt="Torre Eiffel em Paris">
+                <h3>Paris</h3>
+            
+            <p>Capital da França, famosa por sua cultura, arte, moda, história e gastronomia.</p>
+        </div>
+
+        <div class="card">
+            
+                <img src="tailandia.jpg" alt="Praia paradisíaca nas Ilhas Phi Phi, Tailândia">
+                <h3>Ilhas Phi Phi, Tailândia</h3>
+          
+            <p>Um dos destinos mais deslumbrantes da Tailândia, com praias paradisíacas e águas cristalinas.</p>
+        </div>
+
+        <div class="card">
+            
+                <img src="vietna.jpg" alt="Noite iluminada em Hoi An, Vietnã">
+                <h3>Hoi An, Vietnã</h3>
+            
+            <p>Cidade histórica encantadora, conhecida por suas ruas iluminadas por lanternas e atmosfera romântica.</p>
+        </div> -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright 2025 - Todos os direitos reservados TurisTop.com</p>
+    </footer>
+
+
+<!-- 
+    <script src="app.js"></script>
+    <script>
+        function carregarDestinosPGprinc() {
+            var rowCidades = document.getElementById("cidades");
+
+            for (let i = 0; i < dados.length; i++) {
+                rowCidades.innerHTML += `
+                    <div class="card">
+                        <a href="detalhes.html?id=${i}">
+                        <img src="${dados[i].imagem}" alt="${dados[i].titulo}" />
+                        <h3>${dados[i].titulo}</h3>
+                        <p>${dados[i].descricao}</p>
+                        </a>
+                    </div>
+                    `;
+            }
+        }
+        carregarDestinosPGprinc();
+        
+    </script>
+-->
+
+    <script>
+        fetch('http://localhost:3000/cidades')
+            .then(res => res.json())
+            .then(cidades =>{
+                const rowCidades = document.getElementById('cidades');
+                for(let i=0; i<cidades.length; i++){
+                    rowCidades.innerHTML += `
+                        <div class="card">
+                            <a href="detalhes.html?id=${i}">
+                            <img src="${cidades[i].imagem}" alt="${cidades[i].titulo}" />
+                            <h3>${cidades[i].titulo}</h3>
+                            <p>${cidades[i].descricao}</p>
+                            </a>
+                        </div>
+                        `;
+                }
+            })
+        .catch(err =>console.error('Erro ao carregar cidade:', err));
+        
+    </script>
+
+</body>
+    
+
+</html>

@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: rgb(8, 8, 86);
+    font-size: 1.5rem;
+    height: 80px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#btncadastro{
+    font-size: 1.3rem;
+    padding: 7px;
+    background-color: green ;
+    color: white;
+    cursor: pointer;
+}
+#btncadastro:hover{
+    background-color: rgb(3, 81, 3);
+}
+.pesquisa {
+    display: flex;
+    gap: 10px;
+}
+
+.caixapesquisa {
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid rgb(78, 78, 223);
+    padding: 5px;
+}
+
+.botao {
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgb(78, 78, 223);
+    color: white;
+}
+#btncadastro{
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px; 
+    padding: 20px;
+}
+
+
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+main p{
+    text-align: center;
+    
+}
+
+.imgprincipal {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h2{
+    margin-top: 30px;
+    margin-bottom: -20px;
+    margin-left: -70px;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(8, 8, 86);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 5px solid rgb(78, 78, 223);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    
+    border-radius: 5px;
+}
+
+.card a{
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: rgb(8, 8, 86);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+@media (max-width: 1424px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .barralateral {
+        width: 100%;
+        text-align: center;
+        margin-top: 90px;
+        font-size: 130%;
+        
+    }
+
+    .barralateral ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .imgprincipal{
+        margin-top: 0px;
+    }
+    .login {
+        margin: 0 auto 10px;
+        width: 50%;
+    }
+
+    main {
+        padding: 10px;
+    }
+    .card p{
+        font-size: 130%;
+    }
+    h2{
+        font-size: 170%;
+    }
+    h3{
+        font-size: 140%;
+    }
+    footer{
+        font-size: 130%;
+    }
+    main p{
+        font-size: 130%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .imgprincipal{
+        margin-top: 20px;
+    }
+    h2{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .pesquisa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixapesquisa {
+        width: 170%;
+    }
+    h3{
+        margin-bottom: 10px;
+    }
+    .card{
+        font-size: 150%;
+    }
+    .card p{
+        font-size: 110%;
+    }
+    .botao {
+        width: 50%;
+    }
+    .barralateral {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        margin-top: 157px;
+        font-size: 130%;  
+    }
+
+    .barralateral ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    main{
+        font-size: 130%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .login {
+        width: 50%;
+    }
+    .imgprincipal{
+        margin-top: 20px;
+    }
+    main{
+        font-size: 120%;
+    }
+    .pesquisa {
+        width: 100%;
+    }
+
+    .caixapesquisa {
+        width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+    }
+    .barralateral{
+        margin-top: 157px;
+        font-size: 100%;
+    }
+    h3{
+        margin-bottom: 10px;
+    }
+    .card{
+        font-size: 150%;
+    }
+    .card p{
+        font-size: 110%;
+    }
+    
+}
