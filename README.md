@@ -5,10 +5,10 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Lucas Loiolla Gomes
+- Matricula: 897083
+- Proposta de projeto escolhida: Guia de Lugares Turísticos
+- Breve descrição sobre seu projeto: Este projeto tem como objetivo recomendar os melhores lugares turísticos do planeta, a página perfeita para aqueles que gostariam de viajar pelo mundo e não têm nenhuma ideia de onde ir.
 
 **Print do testes da API com Postman ou similar**
 
