@@ -21,7 +21,7 @@
             .then(res => res.json())
             .then(cidades =>{
             let params = new URLSearchParams(location.search);
-            let id = params.get('id');
+            let id = params.get("id");
             let cidade = cidades.find(elem => elem.id == id);
             let tela = document.getElementById('tela');
             if(cidade){

@@ -100,12 +100,13 @@
             .then(cidades =>{
                 const rowCidades = document.getElementById('cidades');
                 for(let i=0; i<cidades.length; i++){
+                    const cidade = cidades[i];
                     rowCidades.innerHTML += `
                         <div class="card">
-                            <a href="detalhes.html?id=${i}">
-                            <img src="${cidades[i].imagem}" alt="${cidades[i].titulo}" />
-                            <h3>${cidades[i].titulo}</h3>
-                            <p>${cidades[i].descricao}</p>
+                            <a href="detalhes.html?id=${cidade.id}">
+                            <img src="${cidade.imagem}" alt="${cidade.titulo}" />
+                            <h3>${cidade.titulo}</h3>
+                            <p>${cidade.descricao}</p>
                             </a>
                         </div>
                         `;
