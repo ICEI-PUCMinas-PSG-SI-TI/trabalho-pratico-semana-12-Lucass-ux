@@ -25,14 +25,14 @@ header h1{
     font-weight: bold;
 }
 header h2{
-    padding-right: 20px;
+    padding-right: 0px;
     display: flex;
 }
 a{
         text-decoration: none;
         color: white;
 }
-.btns{
+#btns{
     display: flex;
     justify-content: center ;
     margin-top: 30px;
@@ -46,20 +46,3 @@ button{
     border-radius: 10px;
     padding: 7px;
 }
-#btnInsert{
-    background-color: green;
-    color: white;
-    
-}
-#btnUpdate{
-    background-color: yellow;
-}
-#btnDelete{
-    background-color: red;
-    color: white;
-}
-#btnClear{
-    background-color: gray;
-    color: white;
-}
-

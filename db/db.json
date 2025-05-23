@@ -1,14 +1,13 @@
 {
   "cidades": [
     {
-      "id": "1",
       "titulo": "Singapura",
       "descricao": "Ilha tropical no sudeste da Ásia, conhecida pela sustentabilidade e pela presença de áreas verdes.",
-      "conteudo": "<p>  Singapura é uma mistura vibrante de modernidade, cultura e natureza. Pequena no tamanho, mas gigante em atrações, a cidade-estado encanta visitantes do mundo todo com sua organização impecável e experiências únicas.</p><p>  Entre os destaques está o icônico Marina Bay Sands, com sua impressionante piscina infinita e vista panorâmica da cidade. Ao lado, o Gardens by the Bay oferece um espetáculo de natureza e tecnologia, com suas árvores artificiais iluminadas e estufas futuristas.</p><p>  Para quem busca cultura, o Bairro de Chinatown, a Little India e o Kampong Glam mostram a diversidade étnica de Singapura em templos, lojas e sabores autênticos.</p><p>  O famoso zoológico de Singapura, com seu conceito de “zoo aberto”, é uma ótima opção para famílias, assim como a ilha de Sentosa, onde se encontram praias, parques aquáticos e o Universal Studios Singapore.</p><p>  Seja para explorar arquitetura moderna, provar comidas incríveis ou relaxar em jardins tropicais, Singapura é um destino que surpreende em cada detalhe.</p>",
-      "categoria": "Cidade",
+      "conteudo": "Singapura é uma mistura vibrante de modernidade, cultura e natureza. Pequena no tamanho, mas gigante em atrações, a cidade-estado encanta visitantes do mundo todo com sua organização impecável e experiências únicas.Entre os destaques está o icônico Marina Bay Sands, com sua impressionante piscina infinita e vista panorâmica da cidade. Ao lado, o Gardens by the Bay oferece um espetáculo de natureza e tecnologia, com suas árvores artificiais iluminadas e estufas futuristas.Para quem busca cultura, o Bairro de Chinatown, a Little India e o Kampong Glam mostram a diversidade étnica de Singapura em templos, lojas e sabores autênticos.O famoso zoológico de Singapura, com seu conceito de “zoo aberto”, é uma ótima opção para famílias, assim como a ilha de Sentosa, onde se encontram praias, parques aquáticos e o Universal Studios Singapore.Seja para explorar arquitetura moderna, provar comidas incríveis ou relaxar em jardins tropicais, Singapura é um destino que surpreende em cada detalhe.",
       "imagem": "img/singapura.jpg",
       "imagem2": "img/singapura2.jpg",
-      "imagem3": "img/singapura3.jpg"
+      "imagem3": "img/singapura3.jpg",
+      "id": "1"
     },
     {
       "id": "2",
